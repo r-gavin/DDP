@@ -54,6 +54,6 @@ Now let's build our map!!! The markers will have a pop up with the name of the p
 ```{r build_map}
 parkData %>% leaflet() %>% addTiles() %>%  
       addProviderTiles(providers$OpenStreetMap) %>%
-      addMarkers(popup = parkData$popup,clusterOptions = markerClusterOptions())
+      addMarkers(popup = parkData$popup, clusterOptions = markerClusterOptions())
 ```
 
