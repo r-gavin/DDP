@@ -52,7 +52,7 @@ Everything looks good!
 Now let's build our map!!! The markers will have a pop up with the name of the parks, monument, etc.
 
 ```{r build_map}
-parkData %>% leaflet() %>% addTiles() %>%  
+parkData %>% leaflet() %>% 
       addProviderTiles(providers$OpenStreetMap) %>%
       addMarkers(popup = parkData$popup,clusterOptions = markerClusterOptions())
 ```
