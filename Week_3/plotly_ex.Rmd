@@ -223,7 +223,7 @@ updatemenus <- list(
                                     list(title="M. Jordan vs L. James: 2-PT Field Goals per Game",
                                          yaxis=list(side="left",title="2-PT FG Made and Attempted/Game"),
                                          yaxis2=list(side="right",overlaying="y",range=c(10,70),
-                                                     title="3-PT FG Percentage/Game")))
+                                                     title="2-PT FG Percentage/Game")))
                         ),
                   
                   # #10, 11, 12
@@ -273,7 +273,7 @@ updatemenus <- list(
                                     list(title="M. Jordan vs L. James: Total Field Goals per Game",
                                          yaxis=list(side="left",title="Total FG Made and Attempted/Game"),
                                          yaxis2=list(side="right",overlaying="y",range=c(10,70),
-                                                     title="3-PT FG Percentage/Game")))
+                                                     title="Total FG Percentage/Game")))
                         )
                   )
             )
