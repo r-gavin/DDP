@@ -1,9 +1,8 @@
 ---
-title: "Michael Jordan vs LeBron James"
+title: "Michael Jordan & LeBron James:    A comparison using the Plot_ly Package"
 author: "Ryan Gavin"
-date: "6/9/2017"
+date: "6/20/2017"
 output: ioslides_presentation
-#output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -12,11 +11,11 @@ knitr::opts_chunk$set(echo = TRUE,
                       warning = FALSE)
 ```
 
-### Executive Summary
+## Executive Summary
 
 As an example of practice with the `plot_ly` package, we'll take a look at some of the stats for **Michael Jordan** and **LeBron James** over their careers.
 
-### Data Processing
+## Data Processing
 
 We'll begin by loading the necessary libraries. Then we read in the data$^*$ from `.csv` files and tidy it up.
 
@@ -35,7 +34,15 @@ lj_pg$Season[1:dim(lj_pg)[1]] <- c(1:dim(lj_pg)[1])
 
 mj_pg <- mutate(mj_pg,"Lg" = NULL, "Pos" = NULL)
 lj_pg <- mutate(lj_pg,"Lg" = NULL, "Pos" = NULL)
+```
 
+$^*$ Data was taken from the website [Sports Reference](http://www.sports-reference.com).
+
+## Data Processing
+
+cont'd
+
+```{r data2}
 mj_pg$Season <- as.numeric(mj_pg$Season)
 lj_pg$Season <- as.numeric(lj_pg$Season)
 
@@ -45,7 +52,7 @@ lj_pg <- mutate(lj_pg, "Player" = "James")
 pg <- rbind(mj_pg,lj_pg)
 ```
 
-### Data Analysis
+## Data Analysis
 
 The following plot shows various statistics for the players Michael Jordan and LeBron James over their respective careers. Statistics (per season) included are  
 - Games Played  
@@ -54,13 +61,17 @@ The following plot shows various statistics for the players Michael Jordan and L
 - Average Offensive Rebounds per Game  
 - Average Defensive Rebounds per Game  
 - Average Total Rebounds per Game  
+
+## Data Analysis
+cont'd  
 - Average 2-Point Field Goals per Game (Made, Attempted, Percentage)  
 - Average 3-Point Field Goals per Game (Made, Attempted, Percentage)  
 - Average Total Field Goals per Game (Made, Attempted, Percentage)  
 
 Use the buttons on the plot to navigate through the various statistics.
 
-```{r analysis, echo=FALSE, fig.height=7.5, fig.width=10}
+## Plot_ly Plot
+```{r analysis, echo=FALSE}
 updatemenus <- list(
       list(
             type="buttons",
@@ -337,6 +348,3 @@ p <- plot_ly(data = pg) %>%
 p
 ```
 
--------------
-
-$^*$ Data was taken from the website [Sports Reference](http://www.sports-reference.com).
