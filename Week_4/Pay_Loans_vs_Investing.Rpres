@@ -1,0 +1,64 @@
+Paying Loans Quickly vs Investing
+========================================================
+author: Ryan Gavin
+date: June 29, 2017
+width: 1440
+height: 900
+
+Student Loans vs Retirement
+========================================================
+You're a recent college graduate, which is great. But there are two things you know for sure:  
+
+1. You need start **paying off your student loans**  
+2. You really should start **saving for retirement** (it's never to early to start)  
+
+Your recently attained job will help you tackle the two certainties above, but you could ask yourself -
+> "What's the best approach to satisfy the needs of student loans *and* retirement?"  
+
+This document presents the `shiny` application you can use that may help you answer this exact question.
+
+The Naive Assumption
+========================================================
+### The Student Loan
+As a student with loans, you know that those loans carry interest. (You thought they were giving you that money with no strings attached?) But, the faster you pay off the principal (the borrowed amount), the less interest you accrue. That's great! You don't like paying interest on money you borrowed so you decide that this is what you'll do.  
+However, is this a **naive assumption**?
+
+### Saving for Retirement
+What if you take that *extra* money that would go to paying off your student loan more quickly, and invested it towards your retirement? By investing that money, you'll *earn* interest.
+
+### Pay Off the Loan vs Paying into Retirement
+So, what do you do? Take all the money you can afford (per month) and use that to pay off your student loan, *or* pay the minimum on your student loan and invest the rest?
+
+The Application to Help
+========================================================
+<br>
+<small>The `shiny` application *Payment of Student Loans vs Investment* aims to help you make this type of decision. You take all you know about your monthly budget restraints, and from that, find how much you have left to go towards loan payments and investments. From this amount, you decide how much of it goes to student loan payments (minimum payment to 100%) and how much will go to investment. </small> 
+<small>As you make your way through the application, you can investigate the repercusions of your decisions via various tables and plots.</small>
+
+**Links to the application and *R* source files**:  
+- [shiny application](http://r-gavin.shinyapps.io/pay_loans_vs_investing/)  
+- [ui.R & server.R](https://github.com/r-gavin/DDP/tree/master/Week_4/pay_v_invest)  
+
+------------
+<br>
+Features included:  
+- annual income, taxation percentage
+- monthly expenditure budget
+      * <small>housing, food, transportation, savings, etc.</small>
+- student loan details
+      * <small>principal, interest rate, loan term, etc.</small>
+- investment details
+      * <small>initial investment, rate of return, etc.</small>
+- financial analysis
+      * <small>monthly payment schedules, comparison plots, etc.</small>
+
+Screen Shots
+========================================================
+<br>
+<img src="pic1.png" width="600" height="400" />
+<img src="pic3.png" width="600" height="400" />
+
+***
+<br>
+<img src="pic2.png" width="600" height="400" />
+<img src="pic4.png" width="600" height="400" />
